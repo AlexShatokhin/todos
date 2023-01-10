@@ -1,0 +1,38 @@
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 18px;
+    color: rgb(128, 128, 128);
+    .clear{
+        transition: .3s all;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.clear_hide{
+    opacity: 0;
+}
+
+@media(max-width: 675px){
+    .footer{
+        font-size: 16px;
+        padding: 0 5px;
+    }
+    
+}
+
+@media(max-width: 440px){
+    .footer{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+}
