@@ -55,7 +55,26 @@
 
 
 @media(max-width: 525px){
+    .list_item{
+        padding: 0 7px;
+    }
     .list_item .main_elem .item_title{
         font-size: 18px;
     }
+    .list_item .main_elem .checkbox{
+        max-width: 25px;
+        height: 25px;
+    }
+    .complete::before{
+        font-size: 20px;
+        left: 4px;
+        top: -3px;
+    }
+}
+
+@media(max-width: 400px){
+    .list_item .main_elem .item_title{
+        margin-left: 0;
+    }
+
 }

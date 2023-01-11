@@ -10,7 +10,8 @@ class AddItem extends Component{
     }
 
     changeValue = (value) => {
-        this.setState({value})
+        if(value.length<35)
+            this.setState({value})
     }
 
     addItem = (e) => {
@@ -25,7 +26,7 @@ class AddItem extends Component{
     render(){
         return (
             <form onClick={(e)=>this.addItem(e)} action="#" className="add_item_form">
-                <input maxLength={45} value = {this.state.value}
+                <input value = {this.state.value}
                 onChange = {(e) => this.changeValue(e.target.value)}
                 className="add_item_input" type="text" placeholder = "What needs to be done?"/>
                 <button className="submit_item">Submit</button>
