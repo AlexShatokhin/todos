@@ -10,8 +10,7 @@ class AddItem extends Component{
     }
 
     changeValue = (value) => {
-        if(value.length<35)
-            this.setState({value})
+        this.setState({value})
     }
 
     addItem = (e) => {

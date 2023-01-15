@@ -36,7 +36,7 @@ class ListItem extends Component{
                     }} 
                     className={checkboxClasses}></div>
 
-                    <div className={textClasses}>{this.props.content}</div>
+                    <div style = {{fontSize: (this.props.content.length>30 && this.state.resolution < 480)?"13px":null}} className={textClasses}>{this.props.content}</div>
                 </div>
                 <div
                 onClick={()=>this.props.deleteItem(this.props.id)}

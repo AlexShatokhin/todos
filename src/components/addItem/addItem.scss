@@ -3,11 +3,12 @@
 }
 
 .add_item_input{
-    width: 100%;
+    width: calc(100% - 90px);
     height: 80px;
     color: rgb(158, 158, 158);
     font-size: 25px;
     padding-left: 50px;
+    padding-right: 5px;
     font-weight: 200;
     border: none;
     border-bottom: 2px solid rgb(152, 152, 152);
